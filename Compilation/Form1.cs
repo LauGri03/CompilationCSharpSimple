@@ -28,5 +28,15 @@ namespace Compilation
             MessageBox.Show(CCompilateur.build("build", textBox1.Text, true));
             
         }
+
+        private void compileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(CCompilateur.build("build", textBox1.Text, false));
+        }
+
+        private void runToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(CCompilateur.build("build", textBox1.Text, true));
+        }
     }
 }
